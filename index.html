@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Webpage description goes here" />
+  <meta charset="utf-8">
+  <title>Change_me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <style>
+      body {
+        background-color: black;
+      }
+      .container {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      #sussy-container {
+          height: 60vh;
+          width: auto;
+          animation: rotato 200s linear infinite;
+      }
+      img {
+          height: 100%;
+          width: auto;
+          animation: float 1s linear infinite alternate-reverse;
+          animation-timing-function: cubic-bezier(0.39, 0.175, 0.565, 1)
+      }
+      @keyframes rotato {
+          from {
+              rotate: 0deg;
+          } to {
+              rotate: 360deg;
+          }
+      }
+      @keyframes float {
+          from {
+              transform: translateY(-5px);
+          } to {
+            transform: translateY(+5px);
+          }
+      }
+  </style>
+</head>
+
+<body>
+  
+<div class="container">
+  <div id="sussy-container">
+    <img src="sus.png"></img>
+  </div>
+</div>
+
+<script>
+</script>
+
+</body>
+</html>
