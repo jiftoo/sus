@@ -12,7 +12,18 @@
       body {
         background-image: url("bg.jpg");
 		background-size: 100% auto;
+		overflow: hidden;
       }
+	  #susbackground {
+		position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+		height: 100%;
+		width: auto;
+		object-fit: fill;
+	  }
       .container {
           position: absolute;
           top: 0;
@@ -43,9 +54,9 @@
       }
       @keyframes float {
           from {
-              transform: translateY(-5px);
+			transform: translateY(-5px);
           } to {
-            transform: translateY(+5px);
+			transform: translateY(+5px);
           }
       }
   </style>
@@ -54,6 +65,7 @@
 <body>
   
 <div class="container">
+<video id="susbackground" src="bg.mp4" muted autoplay playsinline loop></video>
   <div id="sussy-container">
     <img src="sus.png"></img>
   </div>
