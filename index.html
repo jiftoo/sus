@@ -1,103 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta name="description" content="sussy website" />
+		<meta charset="utf-8" />
+		<title>ඞ</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="jitoo" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" type="image/png" href="wilbs.png" />
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (m, e, t, r, i, k, a) {
+				m[i] =
+					m[i] ||
+					function () {
+						(m[i].a = m[i].a || []).push(arguments);
+					};
+				m[i].l = 1 * new Date();
+				(k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+			})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-<head>
-  <meta name="description" content="sussy website" />
-  <meta charset="utf-8">
-  <title>ඞ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="jitoo">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="wilbs.png"/>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+			ym(85722923, "init", {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true,
+			});
+		</script>
+		<noscript
+			><div><img src="https://mc.yandex.ru/watch/85722923" style="position: absolute; left: -9999px" alt="" /></div
+		></noscript>
+		<!-- /Yandex.Metrika counter -->
+		<style>
+			body {
+				background-color: black;
+				background-image: url("bg.jpg");
+				background-size: 100% auto;
+				overflow: hidden;
+			}
+			#susbackground {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+			.container {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#sussy-container {
+				height: 60vh;
+				width: auto;
+				animation: rotato 200s linear infinite;
+			}
+			img {
+				height: 100%;
+				width: auto;
+				animation: float 1s linear infinite alternate-reverse;
+				animation-timing-function: cubic-bezier(0.39, 0.175, 0.565, 1);
+			}
+			@keyframes rotato {
+				from {
+					transform: rotate(0deg);
+				}
+				to {
+					transform: rotate(360deg);
+				}
+			}
+			@keyframes float {
+				from {
+					transform: translateY(-5px);
+				}
+				to {
+					transform: translateY(+5px);
+				}
+			}
+		</style>
+	</head>
 
-   ym(85722923, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/85722923" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  <style>
-      body {
-	      background-color: black;
-        background-image: url("bg.jpg");
-		background-size: 100% auto;
-		overflow: hidden;
-      }
-	  #susbackground {
-		position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-		height: 100%;
-		width: 100%;
-		object-fit: cover;
-	  }
-      .container {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-      #sussy-container {
-          height: 60vh;
-          width: auto;
-          animation: rotato 200s linear infinite;
-      }
-      img {
-          height: 100%;
-          width: auto;
-          animation: float 1s linear infinite alternate-reverse;
-          animation-timing-function: cubic-bezier(0.39, 0.175, 0.565, 1)
-      }
-      @keyframes rotato {
-          from {
-		  transform: rotate(0deg);
-          } to {
-		  transform: rotate(360deg);
-          }
-      }
-      @keyframes float {
-          from {
-		transform: translateY(-5px);
-          } to {
-		transform: translateY(+5px);
-          }
-      }
-  </style>
-</head>
+	<body>
+		<div class="container">
+			<video id="susbackground" src="bg.mp4" muted autoplay playsinline loop></video>
+			<div id="sussy-container">
+				<img src="sus.png" id="impostor" />
+			</div>
+		</div>
 
-<body>
-  
-<div class="container">
-<video id="susbackground" src="bg.mp4" muted autoplay playsinline loop></video>
-  <div id="sussy-container">
-    <img src="sus.png" id="impostor"></img>
-  </div>
-</div>
-
-<script>
-	const impostor = document.getElementById("impostor");
-	if(Math.random() < 0.1) {
-		impostor.src = "necoarc.webp";
-	}
-	const colors = ["invert(10%) sepia(92%) saturate(4621%) hue-rotate(359deg) brightness(99%) contrast(117%)", "invert(77%) sepia(80%) saturate(1291%) hue-rotate(10deg) brightness(86%) contrast(100%)",
-"invert(41%) sepia(90%) saturate(1314%) hue-rotate(87deg) brightness(98%) contrast(112%)","invert(59%) sepia(89%) saturate(2378%) hue-rotate(139deg) brightness(101%) contrast(101%)",
-"invert(26%) sepia(100%) saturate(7488%) hue-rotate(295deg) brightness(95%) contrast(109%)"];
-	impostor.style.filter = colors[Math.ceil(Math.random() * colors.length) - 1];
-</script>
-
-</body>
+		<script>
+			const impostor = document.getElementById("impostor");
+			if (Math.random() < 0.1) {
+				impostor.src = "necoarc.webp";
+			}
+			const colors = [
+				"invert(10%) sepia(92%) saturate(4621%) hue-rotate(359deg) brightness(99%) contrast(117%)",
+				"invert(77%) sepia(80%) saturate(1291%) hue-rotate(10deg) brightness(86%) contrast(100%)",
+				"invert(41%) sepia(90%) saturate(1314%) hue-rotate(87deg) brightness(98%) contrast(112%)",
+				"invert(59%) sepia(89%) saturate(2378%) hue-rotate(139deg) brightness(101%) contrast(101%)",
+				"invert(26%) sepia(100%) saturate(7488%) hue-rotate(295deg) brightness(95%) contrast(109%)",
+			];
+			impostor.style.filter = colors[Math.ceil(Math.random() * colors.length) - 1];
+		</script>
+	</body>
 </html>
