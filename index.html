@@ -88,10 +88,14 @@
 </div>
 
 <script>
+	const impostor = document.getElementById("impostor");
+	if(Math.random() < 0.1) {
+		impostor.src = "necoarc.webp";
+	}
 	const colors = ["invert(10%) sepia(92%) saturate(4621%) hue-rotate(359deg) brightness(99%) contrast(117%)", "invert(77%) sepia(80%) saturate(1291%) hue-rotate(10deg) brightness(86%) contrast(100%)",
 "invert(41%) sepia(90%) saturate(1314%) hue-rotate(87deg) brightness(98%) contrast(112%)","invert(59%) sepia(89%) saturate(2378%) hue-rotate(139deg) brightness(101%) contrast(101%)",
 "invert(26%) sepia(100%) saturate(7488%) hue-rotate(295deg) brightness(95%) contrast(109%)"];
-	document.getElementById("impostor").style.filter = colors[Math.ceil(Math.random() * colors.length) - 1];
+	impostor.style.filter = colors[Math.ceil(Math.random() * colors.length) - 1];
 </script>
 
 </body>
